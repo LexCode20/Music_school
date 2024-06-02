@@ -21,7 +21,7 @@ header li:last-child{margin-right: 0px;}
 /*Hero*/
 
 .hero{background-image: url(../img/hero.jpg); background-size: cover; min-height: 100vh; color: #fff; display: flex;
-    justify-content: center; align-items: center; flex-direction: column; text-align: center;}
+    justify-content: center; align-items: center; flex-direction: column; text-align: center; background-position: center center;}
 .hero h1{font-size: 3.2rem; margin-bottom: 15px;}
 .hero h3{font-size: 2rem; margin-bottom: 15px;}
 .hero .btn{background-color: #fff; border-radius: 4px; color: rgb(4, 4, 54 ); padding: 20px 50px; text-transform: uppercase;}
@@ -54,7 +54,7 @@ header li:last-child{margin-right: 0px;}
 
 .caracteristicas .grid{width: 100%; display: flex;}
 .caracteristicas .grid li{padding: 0px 30px; text-align: center;}
-.caracteristicas .grid li img{height: 50px; width: 50px; color: rgb(28, 118, 208);font-size: 50px; margin-bottom: 30px;}
+.caracteristicas .grid li i{height: 50px; width: 50px; color: rgb(28, 118, 208);font-size: 50px; margin-bottom: 30px;}
 .caracteristicas .grid li h4{font-size:  1.5rem; color: rgb(28, 118, 208); margin-bottom: 30px;}
 .caracteristicas .grid li p{color: #fff;}
 @media(max-width: 850px){
