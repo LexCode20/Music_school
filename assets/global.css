@@ -1,3 +1,16 @@
+:root{
+    --color1: #0B090A;
+    --color2: #161A1D;
+    --color3: #660708;
+    --color4: #A4161A;
+    --color5: #BA181B;
+    --color6: #E5383B;
+    --color7: #B1A7A6;
+    --color8: #D3D3D3;
+    --color9: #F5F3F4;
+    --color10: #FFFFFF;
+}
+
 *{margin: 0px; padding: 0px; font-size: 100%; box-sizing: border-box; font-family: 'Open sans' sans-serif;}
 nav, ul{list-style: none;}
 a{text-decoration: none; cursor: pointer; opacity: 0.9;}
@@ -6,10 +19,10 @@ a:hover{opacity: 1;}
 /* Header */
 
 header{width: 100%; position: absolute; top: 0px; left: 0px; display: flex; justify-content: space-between;
-    align-items: center; padding: 20px 50px; background-color: #fff;}
+    align-items: center; padding: 20px 50px; background-color: var(--color10);;}
 header img{width: 10vh;}
 header nav{display: flex;}
-header li a{color: rgb(4, 4, 54);}
+header li a{color: var(--color5);}
 header li{margin: 0px 15px;}
 header li:first-child{margin-left: 0px;}
 header li:last-child{margin-right: 0px;}
@@ -19,23 +32,40 @@ header li:last-child{margin-right: 0px;}
 }
 
 /* Hero */
-.hero{ min-height: 50vh; background-color: aqua; display: flex;
+.hero{ min-height: 50vh; background-color: #0b090ad8;); display: flex;
 justify-content: center; align-items: center; flex-direction: column; text-align: center; background-position: center center;}
 .hero .search-position{width: 220px; height: 20px; display: flex;position: absolute;}
 .hero .search-position input{outline: none;border: none; display: absolute; height: 4vh}
 .hero .search-position button {background: none; border: none;background-color: #fff; height: 4vh; cursor: pointer;}
 
 /* Cursos */
-.cursos{display: flex;flex-direction: column;align-items: center;}
-.cursos h3{font-size: 2rem; margin-bottom: 35px; color: rgb(4, 4, 54); text-align: center;}
-.cursos hr{width: 200px; height: 2px; background-color: rgb(4, 4, 54); margin-bottom: 70px; border: none;}
+.cursos {flex-wrap: wrap;width: 100%;display: flex;}
+.cursos .grid {border: 10px solid white; height: 100vh;width: 100%;margin: 20vh 1vh 10vh 1vh;padding: 5vh; /* Ajustado para centralizar horizontalmente */display: flex;flex-wrap: wrap; /* Permite quebra de linha */}
+.cursos .grid div {transition: .5s; background-clip: content-box; background-size: cover; background-position: center; background-color: #A4161A; cursor: pointer;height: 45%;width: 22.5%; /* 22.5% para 4 elementos + margens */margin: 15px;}
+.cursos .grid div:hover{opacity: 0.7; transition: 0.5s; height: 50%;}
+.cursos .grid div .up {flex-basis: 50%;}
+.cursos .grid div .down {flex-basis: 50%;}
 
-.cursos .grid{width: 100%; display: flex; flex-wrap: wrap; background-image: url(../img/cursos/madeira-empe.jpg);}
-.cursos .grid li{height: 350px; padding: 1px; border-radius: 4px; background-clip: content-box; background-size: cover; background-position: center;}
-.cursos .grid li.div2{flex-basis: 50%; border: #fff 50px solid;}
-.cursos .grid li.large{flex-basis: 100%;}
-.cursos .grid li.div1{flex-basis: 50%; border: #fff 1px solid;}
+/*NewsLetter*/
+
+.newsletter{display: flex; flex-direction: column; align-items: center; padding: 100px 50px;}
+.newsletter h3{font-size: 2rem; margin-bottom: 35px; color: var(--color5); text-align: center;}
+.newsletter p{max-width: 800px; margin-bottom: 35px; color: var(--color5); text-align: center;}
+.newsletter hr{width: 200px; height: 2px; background-color: var(--color5); margin-bottom: 70px; border: none;}
+
+.newsletter form{display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 80%; max-width: 800px;}
+.newsletter input{padding: 15px; border: 1px solid var(--color5); border-radius: 4px; margin-right: 15px; flex: 1;}
+.newsletter button{padding: 15px; background-color: var(--color5); text-transform: uppercase; border: none; border-radius: 4px; cursor: pointer;}
+.newsletter button a{color: var(--color10);}
 @media(max-width: 700px){
-    .cursos .grid li.small,.cursos .grid li.large{flex-basis: 100%;}
-    .hero h3{font-size: 1.5rem;}
+    .newsletter input{flex-basis: 100%; margin-bottom: 15px;}
 }
+
+/*Footer*/
+
+footer{display: flex; flex-direction: column; background-color: var(--color2); padding: 50px 0px; align-items: center;}
+footer ul{display: flex; margin-bottom: 25px;}
+footer ul li{margin-right: 10px;}
+footer ul :local-link:last-child{margin-right: 0px;}
+footer ul li a{color: var(--color5); font-size: 2rem;}
+footer p{color: var(--color5); text-align: center;}

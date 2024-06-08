@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="shortcut icon" href="img/favicon_transparent_32x32.png" type="image/x-icon">
 </head>
 <body>
     <style>
+        :root{
+            --color1: #0B090A;
+            --color2: #161A1D;
+            --color3: #660708;
+            --color4: #A4161A;
+            --color5: #BA181B;
+            --color6: #E5383B;
+            --color7: #B1A7A6;
+            --color8: #D3D3D3;
+            --color9: #F5F3F4;
+            --color10: #FFFFFF;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right,rgb(53, 173, 242),rgb(22, 17, 71));
+            background-image: linear-gradient(to right,#BA181B,#0B090A);
         }
         .box{
             color: white;
@@ -23,13 +36,13 @@
             width: 22.8%;
         }
         fieldset{
-            border: 3px solid dodgerblue;
+            border: 3px solid var(--color5);
         }
         legend{
-            border: 1px solid dodgerblue;
+            border: 1px solid var(--color5);
             padding: 1vh;
             text-align: center;
-            background-color: dodgerblue;
+            background-color: var(--color5);
             border-radius: .5vh;
         }
         .inputBox{
