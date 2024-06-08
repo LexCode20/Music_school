@@ -19,8 +19,8 @@ a:hover{opacity: 1;}
 /* Header */
 
 header{width: 100%; position: absolute; top: 0px; left: 0px; display: flex; justify-content: space-between;
-    align-items: center; padding: 20px 50px; background-color: var(--color10);;}
-header img{width: 10vh;}
+    align-items: center; padding: 20px 50px; background-color: var(--color10);}
+header img{width: 10vh; cursor: pointer;}
 header nav{display: flex;}
 header li a{color: var(--color5);}
 header li{margin: 0px 15px;}
@@ -28,11 +28,11 @@ header li:first-child{margin-left: 0px;}
 header li:last-child{margin-right: 0px;}
 @media(max-width: 700px){
     header{flex-direction: column;}
-    header img{margin-bottom: 15px;}
+    header img{margin: 15px;}
 }
 
 /* Hero */
-.hero{ min-height: 50vh; background-color: #0b090ad8;); display: flex;
+.hero{ min-height: 50vh; background-color: #0b090ad8; display: flex;
 justify-content: center; align-items: center; flex-direction: column; text-align: center; background-position: center center;}
 .hero .search-position{width: 220px; height: 20px; display: flex;position: absolute;}
 .hero .search-position input{outline: none;border: none; display: absolute; height: 4vh}
@@ -42,7 +42,7 @@ justify-content: center; align-items: center; flex-direction: column; text-align
 .cursos {flex-wrap: wrap;width: 100%;display: flex;}
 .cursos .grid {border: 10px solid white; height: 100vh;width: 100%;margin: 20vh 1vh 10vh 1vh;padding: 5vh; /* Ajustado para centralizar horizontalmente */display: flex;flex-wrap: wrap; /* Permite quebra de linha */}
 .cursos .grid div {transition: .5s; background-clip: content-box; background-size: cover; background-position: center; background-color: #A4161A; cursor: pointer;height: 45%;width: 22.5%; /* 22.5% para 4 elementos + margens */margin: 15px;}
-.cursos .grid div:hover{opacity: 0.7; transition: 0.5s; height: 50%;}
+.cursos .grid div:hover{opacity: 0.7; transition: 0.5s; height: 50%; width: 23.7%;}
 .cursos .grid div .up {flex-basis: 50%;}
 .cursos .grid div .down {flex-basis: 50%;}
 
