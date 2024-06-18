@@ -42,9 +42,11 @@ justify-content: center; align-items: center; flex-direction: column; text-align
 .cursos {flex-wrap: wrap;width: 100%;display: flex;}
 .cursos .grid {border: 10px solid white; height: 100vh;width: 100%;margin: 20vh 1vh 10vh 1vh;padding: 5vh; /* Ajustado para centralizar horizontalmente */display: flex;flex-wrap: wrap; /* Permite quebra de linha */}
 .cursos .grid div {transition: .5s; background-clip: content-box; background-size: cover; background-position: center; background-color: #A4161A; cursor: pointer;height: 45%;width: 22.5%; /* 22.5% para 4 elementos + margens */margin: 15px;}
-.cursos .grid div:hover{opacity: 0.7; transition: 0.5s; height: 50%; width: 23.7%;}
+.cursos .grid div:hover{ opacity: 0.1; transition: 0.5s; height: 50%; width: 23.7%;}
 .cursos .grid div .up {flex-basis: 50%;}
 .cursos .grid div .down {flex-basis: 50%;}
+.cursos .grid div h3{position: absolute; z-index: -1; color: var(--color10); font-size: 1.2rem;}
+
 
 /*NewsLetter*/
 
